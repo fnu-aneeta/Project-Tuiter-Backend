@@ -1,0 +1,19 @@
+{
+  "name": "web-dev-fa21-node-server",
+  "version": "1.0.0",
+  "description": "Server for WebDev Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webdev"
+  ],
+  "author": "Aneeta",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.13",
+    "express-session": "^1.17.2"
+  }
+}
