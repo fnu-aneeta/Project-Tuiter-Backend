@@ -12,8 +12,9 @@
   "author": "Aneeta",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.27.0",
     "express": "^4.17.1",
-    "mongoose": "^6.0.13",
-    "express-session": "^1.17.2"
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.13"
   }
 }

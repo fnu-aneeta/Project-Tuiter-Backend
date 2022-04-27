@@ -47,5 +47,6 @@ module.exports = (app) => {
     app.get('/api/search/posts', searchPosts);
     app.get('/api/posts', findAllPosts);
     app.get('/api/posts/:email', findAllPostsByEmail);
+    app.post('/api/:uid/post', createNewPost);
 };
 

@@ -22,7 +22,17 @@ module.exports = (app) => {
             .then((newWho) => res.json(newWho));
     }
 
+    const deleteWho = (req, res) =>
+        dao.deleteWho(req.params.handle)
+        .then(status => res.send(status));
+
+    const findByHandle = (req, res) =>
+        dao.findByHandle(req.params.handle)
+        .then(who => res.json(who));
+
     app.get("/api/who", findAllWho);
+    app.get("/api/who/:handle", findByHandle);
     app.post("/api/who", createWho);
     app.get("/api/rand/who", findRandWho);
+    app.delete("/api/who/:handle", deleteWho);
 }
